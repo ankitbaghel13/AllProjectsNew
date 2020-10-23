@@ -1,0 +1,28 @@
+package strings;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class LongestSubstringWithoutDuplicates {
+
+	public static void main(String[] args) {
+		
+		String input = "clementisacap";
+		System.out.println(longestSubstringWithoutDuplicates(input));
+	}
+
+	private static StringBuffer longestSubstringWithoutDuplicates(String input) {
+		
+		int start = 0;
+		Map<Character,Integer> positionMap = new HashMap<>();
+		Character currentChar;
+		for(int i=0;i<input.length();i++) {
+			currentChar = input.charAt(i);
+			if(positionMap.containsKey(currentChar)) 
+				start = Math.max(start, positionMap.get(currentChar)+1);
+			positionMap.put(currentChar, i);
+		}
+		return null;
+	}
+
+}

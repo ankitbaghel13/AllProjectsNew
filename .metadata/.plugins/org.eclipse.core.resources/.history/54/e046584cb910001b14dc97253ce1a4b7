@@ -1,0 +1,12 @@
+package binarySearchTrees;
+
+import binaryTrees.TreeUtility;
+
+public class ValidateBST {
+
+	public static void main(String[] args) {
+
+		Node root = TreeUtility.getLargeTree();
+	}
+
+}

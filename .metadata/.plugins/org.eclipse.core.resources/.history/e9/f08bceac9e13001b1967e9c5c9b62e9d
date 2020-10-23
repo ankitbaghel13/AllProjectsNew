@@ -1,0 +1,9 @@
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+
+		String str = "this_is_a_var";
+	}
+
+}

@@ -1,0 +1,36 @@
+package binaryTrees;
+
+public class InvertBinaryTree {
+
+	public static void main(String[] args) {
+		
+		Node root = TreeUtility.getAlgoExpertTree();
+		DepthFirstTraversals.printInorder(root);
+		root = invertBinaryTree(root);
+		DepthFirstTraversals.printInorder(root);
+	}
+
+	/*					   1
+	 *					 /	 \
+	 * 				   2	  3
+	 * 			      /	\	 / \ 
+	 *			     4	 5  6   7
+	 *              / \
+	 *             8   9	   
+	 */
+	private static void invertBinaryTree(Node root) {
+		
+		if(root.left==null && root.right==null)
+			return;
+		
+		if(root.left!=null && root.right!=null) {
+			swapNodes(root.left, root.right);
+		}
+	}
+	
+	private static void swapNodes(Node left, Node right) {
+		Node temp = left;
+		left = right;
+		right = temp;
+	}
+}

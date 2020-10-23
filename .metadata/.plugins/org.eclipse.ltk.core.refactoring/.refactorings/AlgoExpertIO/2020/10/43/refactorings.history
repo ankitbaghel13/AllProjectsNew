@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;arrays.SpiralTraverseArray&apos; to &apos;SpiralTraverse2DArray&apos;&#x0D;&#x0A;- Original project: &apos;AlgoExpertIO&apos;&#x0D;&#x0A;- Original element: &apos;arrays.SpiralTraverseArray&apos;&#x0D;&#x0A;- Renamed element: &apos;arrays.SpiralTraverse2DArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SpiralTraverseArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;arrays{SpiralTraverseArray.java[SpiralTraverseArray" matchStrategy="1" name="SpiralTraverse2DArray" qualified="false" references="true" similarDeclarations="false" stamp="1603034548267" textual="false" version="1.0"/>
+</session>

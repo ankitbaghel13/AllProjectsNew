@@ -1,0 +1,9 @@
+package strings;
+
+public class LongestSubstringWithoutDuplicates {
+
+	public static void main(String[] args) {
+
+	}
+
+}

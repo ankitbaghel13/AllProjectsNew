@@ -1,0 +1,18 @@
+
+public class CaeserCipherEncryptor {
+
+	public static void main(String[] args) {
+
+		String input = "xyz";
+		System.out.println(doCaeserCipherEncryption(input, 3));
+	}
+
+	private static StringBuffer doCaeserCipherEncryption(String input, int shift) {
+		
+		
+		
+		
+		return null;
+	}
+
+}

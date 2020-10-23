@@ -1,0 +1,84 @@
+<html ng-app="storeApp" ng-controller="storeController">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+
+<body>
+	<div class="container">
+		<h2>
+			<center>User Data</center>
+		</h2>
+		<hr />
+
+		<table class="table">
+			<div id="search">
+				<label>Search: <input ng-model="searchKeyword"></label>
+			</div>
+			<thead>
+				<tr>
+					<th ng-click="type = 'firstName'; reverse = !reverse"><span
+						class="glyphicon glyphicon-user"></span> Firstname</th>
+					<th ng-click="type = 'lastName'; reverse = !reverse">Lastname</th>
+					<th ng-click="type = 'emailId'; reverse = !reverse"><span
+						class="glyphicon glyphicon-envelope"></span> Email</th>
+					<th ng-click="type = 'city'; reverse = !reverse">City</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr
+					ng-repeat="data in jsonData | orderBy:type:reverse | filter: searchKeyword">
+					<td>{{data.firstName}}</td>
+					<td>{{data.lastName}}</td>
+					<td>{{data.emailId}}</td>
+					<td>{{data.city}}</td>
+					<td>
+						<button ng-click="Delete($index)" type="button"
+							class="btn btn-info">
+							<span class="glyphicon glyphicon-remove-sign"></span>
+						</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container">
+		<h3>
+			<center>Add User</center>
+		</h3>
+		<hr />
+		<form ng-submit="Add()" class="form-inline" name="myForm">
+			<div class="form-group required">
+				<label for="firstName">First Name: </label> <input id="firstName"
+					type="text" class="form-control" placeholder="firstName"
+					ng-model="newfirstName" required>
+			</div>
+			<div class="form-group required">
+				<label for="lastName">Last Name : </label> <input id="lastName"
+					type="text" class="form-control" placeholder="lastName"
+					ng-model="newlastName" required>
+			</div>
+			<div class="form-group required">
+				<label for="emailId">Email Id : </label> <input id="emailId"
+					type="email" class="form-control" placeholder="emailId"
+					name="emailId" ng-model="newemailId" required>
+			</div>
+			<div class="form-group required">
+				<label for="city">City : </label> <input id="city" type="text"
+					class="form-control" placeholder="city" ng-model="newcity" required>
+			</div>
+			<hr />
+			<div class="wrapper">
+				<button type="submit" class="btn btn-info">Add</button>
+				<button ng-click="Reset()" class="btn btn-info">Reset</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+package binaryTrees;
+
+public class NodeDepths {
+
+	public static void main(String[] args) {
+		
+		Node node = TreeUtility.getSmallTree();
+		System.out.println(nodeDepths(node,0));
+	}
+
+	private static int nodeDepths(Node node) {
+
+		
+		return null;
+	}
+
+}

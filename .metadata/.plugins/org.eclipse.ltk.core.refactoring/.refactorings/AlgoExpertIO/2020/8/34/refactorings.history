@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;InterviewSpectraMedix.ArrayMethods&apos; to &apos;ListMethods&apos;&#x0D;&#x0A;- Original project: &apos;AlgoExpertIO&apos;&#x0D;&#x0A;- Original element: &apos;InterviewSpectraMedix.ArrayMethods&apos;&#x0D;&#x0A;- Renamed element: &apos;InterviewSpectraMedix.ListMethods&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ArrayMethods&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;InterviewSpectraMedix{ArrayMethods.java[ArrayMethods" matchStrategy="1" name="ListMethods" qualified="false" references="true" similarDeclarations="false" stamp="1597660296319" textual="false" version="1.0"/>
+</session>

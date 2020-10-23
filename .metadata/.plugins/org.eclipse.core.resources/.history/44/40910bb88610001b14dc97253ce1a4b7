@@ -1,0 +1,11 @@
+package binaryTrees;
+
+public class RootToLeafPathSumEqualToNumber {
+
+	public static void main(String[] args) {
+		
+		Node root = TreeUtility.getLargeTree();
+		System.out.println(rootToLeafPathSumEqualToNumber(root,12);
+	}
+
+}

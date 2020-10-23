@@ -1,0 +1,6 @@
+1602264660626	Rename method 'print'
+1602275029785	Extract method 'normalData'
+1602276897956	Rename method 'detectAndPrintCycleNode'
+1602334806119	Rename local variable 'i'
+1602335000414	Rename local variable 'i'
+1602335908763	Rename local variable 'current'

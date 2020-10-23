@@ -1,0 +1,41 @@
+package binarySearchTrees;
+
+import binaryTrees.Node;
+import binaryTrees.TreeUtility;
+
+public class FindClosestValueInBST {
+
+	public static void main(String[] args) {
+		
+		Node node = TreeUtility.getLargeTree();
+		System.out.println(findClosestValueInBST(node,21,100));
+	}
+
+	/*					   25
+	 *					 /	  \
+	 *				   /	    \			 
+	 * 				15		       50
+	 * 			  /	   \		 /    \  
+	 *			10		22	   35	   70
+	 * 		    /\	    /\     /\	   /\
+	 * 		   4  12  18  24 31  44	 66  90
+	 */
+	private static int findClosestValueInBST(Node node, int target, int closestValue) {
+		
+		if(node==null)
+			return closestValue;
+		
+		if(node.key>target) {
+			closestValue = (node.key-target)<Math.abs(closestValue-target) ? node.key : closestValue;
+			return findClosestValueInBST(node.left, target, closestValue);
+		}else if(node.key<target) {
+			closestValue = (target-node.key)<Math.abs(closestValue-target) ? node.key : closestValue;
+			return findClosestValueInBST(node.right, target, closestValue);
+		}else 
+			return node.key;
+//		return Math.min(findClosestValueInBST(node.left, target, closestValue),
+//				findClosestValueInBST(node.right, target, closestValue));
+	}
+	
+
+}

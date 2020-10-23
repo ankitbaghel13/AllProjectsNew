@@ -1,0 +1,9 @@
+package stringProblems;
+
+public class RemoveAllConsecutiveDuplicates {
+
+	public static void main(String[] args) {
+
+	}
+
+}

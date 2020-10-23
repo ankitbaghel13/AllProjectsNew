@@ -1,0 +1,15 @@
+package binaryTrees;
+
+public class BranchSum {
+
+	public static void main(String[] args) {
+
+		Node root = TreeUtility.getSmallTree();
+		getBranchSum(root);
+	}
+
+	private static void getBranchSum(Node root) {
+		
+	}
+
+}

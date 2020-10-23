@@ -1,0 +1,18 @@
+package stringProblems;
+
+public class RemoveAllConsecutiveDuplicates {
+
+	public static void main(String[] args) {
+
+		String input = "aaaaabbbbb"
+		System.out.println(removeConsecutiveDulicates());
+	}
+
+	private static String removeConsecutiveDulicates() {
+		
+		
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,55 @@
+package strings;
+
+public class LongestPalindromicSubstring {
+
+	public static void main(String[] args) {
+
+		String input = "abaxyzzyxf";
+		System.out.println(longestPalindromicSubstring(input));
+	}
+
+	private static String longestPalindromicSubstring(String input) {
+
+		int start=0;
+		int length = input.length();
+		int maxPalindromeLength=0;
+		int[] resultOddArray = new int[2];
+		int[] resultEvenArray = new int[2];
+		int[] longestArray = new int[2];
+		
+		for(int i=0;i<length;i++) {
+			//findMaxOddLengthPalindrome
+			resultOddArray = getLongestPalindromeFrom(input, i-1, i+1);
+			
+			//finfMaxEvenLengthPalindrome
+			resultEvenArray = getLongestPalindromeFrom(input, i, i+1);
+			
+			longestArray = resultOddArray[1]>resultEvenArray[1] ? resultOddArray : resultEvenArray;
+		}
+		start = longestArray[0];
+		maxPalindromeLength = longestArray[1];
+			
+		return input.substring(start, start+maxPalindromeLength);
+	}
+	
+	private static int[] getLongestPalindromeFrom(String input, int left, int right) {
+		
+		int start=0;
+		int length = input.length();
+		int currPalindromeLength=0;
+		int maxPalindromeLength=0;
+		
+		while(left>=0 && right<length && input.charAt(left)==input.charAt(right)) {
+			currPalindromeLength = right - left + 1;
+			if(currPalindromeLength>maxPalindromeLength) {
+				start = left;
+				maxPalindromeLength = currPalindromeLength;
+			}
+			left--;
+			right++;
+		}
+		
+		return new int[] {start, maxPalindromeLength};
+	}
+
+}

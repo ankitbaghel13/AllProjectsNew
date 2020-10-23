@@ -1,0 +1,29 @@
+package binarySearchTrees;
+
+import binaryTrees.Node;
+import binaryTrees.TreeUtility;
+
+public class ValidateBST {
+
+	public static void main(String[] args) {
+
+		Node root = TreeUtility.getLargeTree();
+		System.out.println(validateBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
+	}
+
+	private static boolean validateBST(Node root, int minValue, int maxValue) {
+		
+		if(root==null)
+			return true;
+		
+		if(minValue<root.key && root.key<maxValue)
+			return true;
+		else
+			return false;
+		
+		validateBST(root.left, minValue, root.key);
+		validateBST(root, root.key, maxValue);
+		return false;
+	}
+
+}

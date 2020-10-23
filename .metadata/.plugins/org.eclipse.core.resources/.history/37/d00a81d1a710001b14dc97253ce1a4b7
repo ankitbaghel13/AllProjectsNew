@@ -1,0 +1,45 @@
+package binaryTrees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class InvertBinaryTree {
+
+	public static void main(String[] args) {
+		
+		Node root = TreeUtility.getAlgoExpertTree();
+		DepthFirstTraversals.printInorder(root);
+		invertBinaryTree(root);
+		System.out.println();
+		DepthFirstTraversals.printInorder(root);
+	}
+
+	/*					   1
+	 *					 /	 \
+	 * 				   2	  3
+	 * 			      /	\	 / \ 
+	 *			     4	 5  6   7
+	 *              / \
+	 *             8   9	   
+	 */
+	private static void invertBinaryTree(Node root) {
+		
+		Queue<Node> queue = new LinkedList<>();
+		queue.add(root);
+		Node current;
+		while(!queue.isEmpty()) {
+			current = queue.poll();
+			swapNodes(current.left, current.right);
+			if(current.left!=null)
+				queue.add(current.left);
+			if(current.right!=null)	
+				queue.add(current.right);
+		}
+	}
+	
+	private static void swapNodes(Node left, Node right) {
+		Node temp = left;
+		left = right;
+		right = temp;
+	}
+}

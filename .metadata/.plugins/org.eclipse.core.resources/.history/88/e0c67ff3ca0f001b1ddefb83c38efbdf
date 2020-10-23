@@ -1,0 +1,18 @@
+package strings;
+
+import java.util.List;
+
+public class GroupAnagrams {
+
+	public static void main(String[] args) {
+		String[] strArray = new String[] {"yo","act","flop","tac","cat","oy","olfp"};
+		List<List<String>> result = groupAnagrams(strArray);
+	}
+
+	private static List<List<String>> groupAnagrams(String[] strArray) {
+		
+		
+		return null;
+	}
+
+}

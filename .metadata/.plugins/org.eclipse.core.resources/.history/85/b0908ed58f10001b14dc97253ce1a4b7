@@ -1,0 +1,33 @@
+package binaryTrees;
+
+public class NodeDepths {
+
+	int totalDepth;
+	public static void main(String[] args) {
+		
+		Node node = TreeUtility.getSmallTree();
+		System.out.println(nodeDepths(node,0));
+	}
+
+	/*					   1
+	 *					 /	 \
+	 * 				   2	  3
+	 * 			     /	\		 
+	 *			    4	 5
+	 *               \
+	 *                6	   
+	 */
+	private static int nodeDepths(Node node, int currDepth) {
+
+		if(node==null)
+			return 0;
+		
+		currDepth += 1;
+		totalDepth += currDepth;
+		nodeDepths(node.left, currDepth, totalDepth);
+		nodeDepths(node.right, currDepth, totalDepth);
+		
+		return totalDepth;
+	}
+
+}

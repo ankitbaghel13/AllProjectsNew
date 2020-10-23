@@ -1,0 +1,56 @@
+package strings;
+
+public class LongestPalindromicSubstring {
+
+	public static void main(String[] args) {
+
+		String input = "abaxyzzyxf";
+		System.out.println(longestPalindromicSubstring(input));
+	}
+
+	private static String longestPalindromicSubstring(String input) {
+
+		int start=0;
+		int left=0;
+		int right=0;
+		int length = input.length();
+		int currPalindromeLength=0;
+		int maxPalindromeLength=0;
+		String longestPalindromicSubstring=null;
+		
+		for(int i=0;i<length;i++) {
+			//findMaxOddLengthPalindrome
+			left = i;
+			right = i;
+			currPalindromeLength = 0;
+			while(left>=0 && right<length && input.charAt(left)==input.charAt(right)) {
+				currPalindromeLength = right - left + 1;
+				if(currPalindromeLength>maxPalindromeLength) {
+					maxPalindromeLength = currPalindromeLength;
+					longestPalindromicSubstring = input.substring(left,right+1);
+				}
+				left--;
+				right++;
+			}
+			
+			
+			//finfMaxEvenLengthPalindrome
+			left = 0;
+			right = 0;
+			currPalindromeLength = 0;
+			while(left>=0 && right<length && input.charAt(left)==input.charAt(right)) {
+				currPalindromeLength++;
+				if(currPalindromeLength>maxPalindromeLength) {
+					maxPalindromeLength = currPalindromeLength;
+					longestPalindromicSubstring = input.substring(left,right+1);
+				}
+				left--;
+				right++;
+			}
+			
+		}
+		
+		return longestPalindromicSubstring;
+	}
+
+}

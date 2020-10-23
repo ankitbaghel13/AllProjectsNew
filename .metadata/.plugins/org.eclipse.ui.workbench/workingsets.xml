@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1597134508515_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1597134508765_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600332521610_4" label="SpringBoot" name="SpringBoot">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/01-sprint-boot-demo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/03-actuator-demo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/02-dev-tools-demo" type="4"/>
+<item elementID="=Practice" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/cruddemo" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415461555_7" label="CoreJava" name="CoreJava">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Multithreading CaveOfProgramming" type="4"/>
+<item elementID="=Core java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/J2EE" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415522809_8" label="Interview" name="Interview">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Interviews" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SapientMetroCardSystem" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/NewscapeBank" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/InterviewUHG" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/InterviewACLMobile" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415568393_9" label="Spring" name="Spring">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SpringRestExample" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-mvc-example" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415593893_10" label="Hibernate" name="Hibernate">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HibernateOneToMany" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FirstHibOneToOne" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HibManyToMany" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HibInheritance" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415611674_11" label="Web" name="Web">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FirstWebProject" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FirstAngular" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/StoreWebApplication" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415724644_12" label="DesignPatterns" name="DesignPatterns">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Singleton" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415755564_13" label="Java8" name="Java8">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Java8" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Java 8 Concepts Durga" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415796974_14" label="DataStructure" name="DataStructure">
+<item elementID="=BinaryTrees" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AlgoExpertIO" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ProblemSolvingImp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415935989_15" label="ProblemSolving" name="ProblemSolving">
+<item elementID="=ProblemSolvingImp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ProjectEuler" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600415989228_16" label="Algorithms" name="Algorithms">
+<item elementID="=GeeksForGeeks" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ProblemSolvingImp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600416069448_17" label="Other" name="Other">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Servers2" type="4"/>
+<item elementID="=PracticeProblem" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1600759872410_16" label="Microservices" name="Microservices">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/currency-conversion-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/currency-exchange-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/limits-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/netflix-eureka-naming-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/netflix-zuul-api-gateway-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-cloud-config-server" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1597134515851_2" label="Window Working Set" name="Aggregate for window 1597134515851"/>
+</workingSetManager>

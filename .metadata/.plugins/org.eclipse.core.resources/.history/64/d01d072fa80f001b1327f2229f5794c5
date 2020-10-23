@@ -1,0 +1,29 @@
+
+public class CaeserCipherEncryptor {
+
+	public static void main(String[] args) {
+
+		String input = "xyz";
+		System.out.println(doCaeserCipherEncryption(input, 3));
+	}
+
+	private static StringBuffer doCaeserCipherEncryption(String input, int shift) {
+		
+		char[] inputArray = input.toCharArray();
+		char currentChar;
+		int asciiValue;
+		for(int i=0;i<inputArray.length;i++) {
+			currentChar = inputArray[0];
+			asciiValue = currentChar;
+			asciiValue += shift;
+			
+			if(asciiValue>122)
+				asciiValue = asciiValue - 122 + 97
+			
+		}
+		
+		
+		return null;
+	}
+
+}

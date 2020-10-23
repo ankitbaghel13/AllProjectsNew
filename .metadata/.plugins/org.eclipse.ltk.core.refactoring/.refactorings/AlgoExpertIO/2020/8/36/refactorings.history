@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;sum&apos; in &apos;InterviewXoriant.HackerEarth.findResult(...)&apos; to &apos;result&apos;&#x0D;&#x0A;- Original project: &apos;AlgoExpertIO&apos;&#x0D;&#x0A;- Original element: &apos;InterviewXoriant.HackerEarth.findResult(int, int).sum&apos;&#x0D;&#x0A;- Renamed element: &apos;sum&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;sum&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;InterviewXoriant{HackerEarth.java[HackerEarth~findResult~I~I@sum!312!321!316!318!I!0!false" name="result" references="true" stamp="1598900099508" version="1.0"/>
+</session>
